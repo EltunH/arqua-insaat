@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* === Backgrounds (user-confirmed 2026-05-17: #030f02 base) === */
+  --bg-base:     #030f02;
+  --bg-surface:  #0a3406;   /* proposed: lighter card surface */
+  --bg-elevated: #0f4209;   /* proposed: hover / elevated */
+
+  /* === Text (user-confirmed: #FFFFFF base) === */
+  --text-base:   #ffffff;
+  --text-muted:  #8c8c8c;   /* proposed: secondary text */
+  --text-subtle: #5a5a5a;   /* proposed: deepest muted */
+
+  /* === Accent (user-confirmed: #af9270 base) === */
+  --gold:        #af9270;
+  --gold-light:  #c4a987;   /* proposed: hover state */
+  --gold-dark:   #8d7457;   /* proposed: pressed state */
+
+  /* === Borders === */
+  --border:        rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.4);
+
+  /* === Fonts (injected by next/font in layout.tsx) === */
+  --font-heading: var(--font-playfair), Georgia, serif;
+  --font-body:    var(--font-inter), system-ui, sans-serif;
+
+  /* === Layout === */
+  --container-max: 1440px;
+  --container-px:  clamp(1rem, 4vw, 3rem);
+  --section-py:    clamp(5rem, 9vw, 9rem);
+
+  /* === Motion === */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-background:    var(--bg-base);
+  --color-surface:       var(--bg-surface);
+  --color-elevated:      var(--bg-elevated);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-foreground:    var(--text-base);
+  --color-muted:         var(--text-muted);
+  --color-subtle:        var(--text-subtle);
+
+  --color-gold:          var(--gold);
+  --color-gold-light:    var(--gold-light);
+  --color-gold-dark:     var(--gold-dark);
+
+  --color-border:        var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --font-heading: var(--font-heading);
+  --font-body:    var(--font-body);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-base);
+  color: var(--text-base);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

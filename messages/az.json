@@ -1,0 +1,26 @@
+{
+  "Nav": {
+    "home": "Ana səhifə",
+    "projects": "Layihələr",
+    "services": "Xidmətlər",
+    "about": "Haqqımızda",
+    "process": "İş prosesimiz",
+    "news": "Xəbərlər",
+    "contact": "Əlaqə",
+    "cta": "Bizimlə əlaqə"
+  },
+  "Hero": {
+    "tagline": "Memarlıq · İnteryer Dizayn · Tikinti",
+    "title": "Gözləntiləri Aşan Məkanlar",
+    "subtitle": "Estetika, funksionallıq və zamandan asılı olmayan dəyəri birləşdirən memarlıq, interyer və məkanlar yaradırıq.",
+    "cta": "Layihələrimizi kəşf edin",
+    "scrollDown": "Aşağı sürüşdür"
+  },
+  "Common": {
+    "readMore": "Ətraflı oxu",
+    "viewProject": "Layihəyə bax",
+    "viewAll": "Hamısına bax",
+    "loading": "Yüklənir...",
+    "error": "Xəta baş verdi"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "Nav": {
+    "home": "Ana Sayfa",
+    "projects": "Projeler",
+    "services": "Hizmetler",
+    "about": "Hakkımızda",
+    "process": "Sürecimiz",
+    "news": "Haberler",
+    "contact": "İletişim",
+    "cta": "Bize Ulaşın"
+  },
+  "Hero": {
+    "tagline": "Mimarlık · İç Tasarım · İnşaat",
+    "title": "Beklentilerin Ötesinde Mekanlar Tasarlıyoruz",
+    "subtitle": "Estetik, işlevsellik ve zamansız değeri birleştiren mimari, iç mekan ve alanlar yaratıyoruz.",
+    "cta": "Projelerimizi Keşfedin",
+    "scrollDown": "Aşağı Kaydır"
+  },
+  "Common": {
+    "readMore": "Devamını Oku",
+    "viewProject": "Projeyi Gör",
+    "viewAll": "Tümünü Gör",
+    "loading": "Yükleniyor...",
+    "error": "Bir sorun oluştu"
+  }
+}

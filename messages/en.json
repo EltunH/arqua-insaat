@@ -1,0 +1,26 @@
+{
+  "Nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "about": "About Us",
+    "process": "Our Process",
+    "news": "News",
+    "contact": "Contact Us",
+    "cta": "Get in Touch"
+  },
+  "Hero": {
+    "tagline": "Architecture · Interior Design · Construction",
+    "title": "Designing Spaces Beyond Expectations",
+    "subtitle": "We create architecture, interiors and spaces that combine aesthetics, functionality and timeless value.",
+    "cta": "Explore Our Projects",
+    "scrollDown": "Scroll Down"
+  },
+  "Common": {
+    "readMore": "Read More",
+    "viewProject": "View Project",
+    "viewAll": "View All",
+    "loading": "Loading...",
+    "error": "Something went wrong"
+  }
+}
