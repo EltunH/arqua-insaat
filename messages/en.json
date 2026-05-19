@@ -16,6 +16,12 @@
     "exploreProjects": "Explore Our Projects",
     "scrollDown": "Scroll Down"
   },
+  "Stats": {
+    "yearsOfExperience": "Years of Experience",
+    "completedProjects": "Completed Projects",
+    "countries": "Countries",
+    "bespokeApproach": "Bespoke Approach"
+  },
   "Common": {
     "readMore": "Read More",
     "viewProject": "View Project",

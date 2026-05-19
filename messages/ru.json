@@ -16,6 +16,12 @@
     "exploreProjects": "Изучить наши проекты",
     "scrollDown": "Прокрутить вниз"
   },
+  "Stats": {
+    "yearsOfExperience": "Лет опыта",
+    "completedProjects": "Завершённых проектов",
+    "countries": "Стран",
+    "bespokeApproach": "Индивидуальный подход"
+  },
   "Common": {
     "readMore": "Подробнее",
     "viewProject": "Смотреть проект",

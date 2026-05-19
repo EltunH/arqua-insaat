@@ -16,6 +16,12 @@
     "exploreProjects": "Layihələrimizi kəşf edin",
     "scrollDown": "Aşağı sürüşdür"
   },
+  "Stats": {
+    "yearsOfExperience": "İllik təcrübə",
+    "completedProjects": "Tamamlanmış layihə",
+    "countries": "Ölkə",
+    "bespokeApproach": "Fərdi yanaşma"
+  },
   "Common": {
     "readMore": "Ətraflı oxu",
     "viewProject": "Layihəyə bax",

@@ -16,6 +16,12 @@
     "exploreProjects": "Projelerimizi Keşfedin",
     "scrollDown": "Aşağı Kaydır"
   },
+  "Stats": {
+    "yearsOfExperience": "Yıllık Deneyim",
+    "completedProjects": "Tamamlanan Proje",
+    "countries": "Ülke",
+    "bespokeApproach": "Özel Yaklaşım"
+  },
   "Common": {
     "readMore": "Devamını Oku",
     "viewProject": "Projeyi Gör",
