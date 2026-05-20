@@ -3,52 +3,63 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { LocaleSwitcher } from "./LocaleSwitcher";
+import { NavLink } from "./NavLink";
+import { MobileNav } from "./MobileNav";
 
 const NAV_ITEMS = [
   { key: "home", href: "/" },
   { key: "projects", href: "/projects" },
-  { key: "services", href: "/services" },
-  { key: "about", href: "/about" },
-  { key: "process", href: "/process" },
-  { key: "news", href: "/news" },
+  { key: "services", href: "/#services" },
+  { key: "about", href: "/#about" },
+  { key: "whyUs", href: "/#why-us" },
+  { key: "faq", href: "/#faq" },
   { key: "contact", href: "/contact" },
 ] as const;
 
 export async function Header() {
   const t = await getTranslations("Nav");
 
+  const mobileItems = NAV_ITEMS.map((item) => ({
+    key: item.key,
+    href: item.href,
+    label: t(item.key),
+  }));
+
   return (
-    <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border">
+    <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
       <Container>
-        <div className="flex items-center justify-between gap-8 py-5">
-          <Link href="/" className="flex items-baseline gap-2">
-            <span className="font-heading text-xl tracking-wider">ARQUA</span>
-            <span className="text-muted text-[0.6rem] uppercase tracking-[0.3em]">
+        <div className="flex items-center justify-between gap-4 py-4 md:gap-8 md:py-5">
+          <Link href="/" className="flex flex-col items-start leading-none">
+            <span className="font-heading text-lg tracking-wider md:text-xl">
+              ARQUA
+            </span>
+            <span className="mt-1 text-[0.55rem] uppercase tracking-[0.3em] text-muted md:text-[0.6rem]">
               Design &amp; Build
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden items-center gap-8 lg:flex">
             {NAV_ITEMS.map((item) => (
-              <Link
-                key={item.key}
-                href={item.href}
-                className="text-foreground text-xs uppercase tracking-[0.2em] hover:text-gold transition-colors"
-              >
+              <NavLink key={item.key} href={item.href}>
                 {t(item.key)}
-              </Link>
+              </NavLink>
             ))}
           </nav>
 
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-3 md:gap-5">
             <Button
               href="/contact"
               variant="outline"
-              className="hidden sm:inline-flex px-5 py-2.5 text-xs"
+              className="hidden px-5 py-2.5 text-xs sm:inline-flex"
             >
               {t("cta")}
             </Button>
             <LocaleSwitcher />
+            <MobileNav
+              items={mobileItems}
+              ctaHref="/contact"
+              ctaLabel={t("cta")}
+            />
           </div>
         </div>
       </Container>

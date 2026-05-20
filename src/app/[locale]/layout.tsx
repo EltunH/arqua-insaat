@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import "../globals.css";
 
 const inter = Inter({
@@ -55,6 +56,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <Header />
           <div className="flex-1">{children}</div>
           <Footer />
+          <ScrollToTop />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -25,9 +25,9 @@
   --font-body:    var(--font-inter), system-ui, sans-serif;
 
   /* === Layout === */
-  --container-max: 1440px;
+  --container-max: auto;
   --container-px:  clamp(1rem, 4vw, 3rem);
-  --section-py:    clamp(5rem, 9vw, 9rem);
+  --section-py:    clamp(2.5rem, 9vw, 6.25rem);
 
   /* === Motion === */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -51,6 +51,11 @@
 
   --font-heading: var(--font-heading);
   --font-body:    var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {

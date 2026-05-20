@@ -4,8 +4,8 @@
     "projects": "Projects",
     "services": "Services",
     "about": "About Us",
-    "process": "Our Process",
-    "news": "News",
+    "whyUs": "Why Us",
+    "faq": "FAQ",
     "contact": "Contact Us",
     "cta": "Get in Touch"
   },
@@ -22,11 +22,94 @@
     "countries": "Countries",
     "bespokeApproach": "Bespoke Approach"
   },
+  "About": {
+    "eyebrow": "About ARQUA",
+    "title": "Architecture.\nInterior Design.\nConstruction.",
+    "body": "ARQUA is an international design & build firm specializing in architecture, interior design and construction management. We deliver exceptional spaces tailored to our clients' vision and lifestyle.",
+    "cta": "More About Us"
+  },
+  "Services": {
+    "eyebrow": "Our Services",
+    "heading": "What We Do",
+    "residential": "Residential",
+    "residentialSubtitle": "Private Villas & Houses",
+    "commercial": "Commercial",
+    "commercialSubtitle": "Offices & Retail Spaces",
+    "hospitality": "Hospitality",
+    "hospitalitySubtitle": "Hotels & Resorts",
+    "interior": "Interior Design",
+    "interiorSubtitle": "Luxury Interior Solutions",
+    "turnkey": "Turnkey Solutions",
+    "turnkeySubtitle": "From Concept to Completion"
+  },
+  "WhyUs": {
+    "eyebrow": "Why Us",
+    "heading": "What Sets Us Apart",
+    "r1Title": "International Experience",
+    "r1Body": "10+ years across 5 countries, 250+ completed projects.",
+    "r2Title": "End-to-end Service",
+    "r2Body": "Concept, design, construction and turnkey — under one roof.",
+    "r3Title": "Bespoke Approach",
+    "r3Body": "Spaces tailored to each client's vision and lifestyle.",
+    "r4Title": "Premium Execution",
+    "r4Body": "World-class brands, meticulous detail and timeless materials."
+  },
+  "FAQ": {
+    "eyebrow": "Frequently Asked Questions",
+    "heading": "What You're Wondering About",
+    "q1": "How long does a typical project take?",
+    "a1": "Residential projects take 8-14 months from concept to delivery; commercial projects 6-12 months depending on scope.",
+    "q2": "Do you work outside Azerbaijan?",
+    "a2": "Yes, we operate across 5 countries: Azerbaijan, Türkiye, Russia, Georgia and the UAE.",
+    "q3": "Do you handle architecture and interior design together?",
+    "a3": "Yes. Architecture, interior design and construction come as a single integrated service.",
+    "q4": "How is the cost estimated?",
+    "a4": "After an initial consultation, we provide a detailed estimate based on scope, materials and timeline.",
+    "q5": "Can you work with my existing space or plans?",
+    "a5": "Yes. We can renovate, expand or refine existing designs to match your vision.",
+    "q6": "What does the turnkey service include?",
+    "a6": "Design, permits, construction, finishes and final furnishing — fully ready to move in."
+  },
   "Common": {
     "readMore": "Read More",
     "viewProject": "View Project",
     "viewAll": "View All",
     "loading": "Loading...",
     "error": "Something went wrong"
+  },
+  "Footer": {
+    "description": "Premium architecture, interior design and construction.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "rights": "All rights reserved"
+  },
+  "Contact": {
+    "eyebrow": "Get in Touch",
+    "heading": "Let's discuss your project",
+    "body": "For project inquiries, questions or collaboration opportunities, get in touch. Our team will respond within 24 hours.",
+    "formHeading": "Send us a message",
+    "infoHeading": "Contact information",
+    "form": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "phone": "Phone",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send",
+      "submitting": "Sending...",
+      "successTitle": "Your message has been sent",
+      "successBody": "We'll get back to you shortly.",
+      "errorRequired": "This field is required",
+      "errorEmail": "Please enter a valid email",
+      "errorMessageMin": "Message must be at least 10 characters"
+    },
+    "info": {
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "addressLabel": "Address",
+      "addressValue": "Baku, Azerbaijan",
+      "hoursLabel": "Working hours",
+      "hoursValue": "Mon - Fri, 09:00 - 18:00"
+    }
   }
 }

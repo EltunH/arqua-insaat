@@ -16,7 +16,7 @@ const variants: Record<ButtonVariant, string> = {
   secondary:
     "bg-transparent text-gold border border-gold/60 hover:bg-gold/10",
   outline:
-    "bg-transparent text-foreground border border-border-strong hover:border-foreground",
+    "bg-transparent text-foreground border border-border-strong hover:border-gold hover:text-gold",
   ghost: "bg-transparent text-foreground hover:text-gold",
 };
 

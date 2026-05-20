@@ -42,9 +42,9 @@ export const processStepsMock: ProcessStep[] = [
 ];
 
 export const serviceCategoriesMock = [
-  { key: "residential", subtitleKey: "residentialSubtitle", href: "/services/residential" },
-  { key: "commercial", subtitleKey: "commercialSubtitle", href: "/services/commercial" },
-  { key: "hospitality", subtitleKey: "hospitalitySubtitle", href: "/services/hospitality" },
-  { key: "interior", subtitleKey: "interiorSubtitle", href: "/services/interior-design" },
-  { key: "turnkey", subtitleKey: "turnkeySubtitle", href: "/services/turnkey" },
+  { key: "residential", subtitleKey: "residentialSubtitle", href: "/services/residential", image: "/images/residental.jpg" },
+  { key: "commercial", subtitleKey: "commercialSubtitle", href: "/services/commercial", image: "/images/commercial.jpg" },
+  { key: "hospitality", subtitleKey: "hospitalitySubtitle", href: "/services/hospitality", image: "/images/hospitality.png" },
+  { key: "interior", subtitleKey: "interiorSubtitle", href: "/services/interior-design", image: "/images/interyer%20design.jpg" },
+  { key: "turnkey", subtitleKey: "turnkeySubtitle", href: "/services/turnkey", image: "/images/turnkey.jpg" },
 ] as const;

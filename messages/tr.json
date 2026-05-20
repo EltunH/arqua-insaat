@@ -4,8 +4,8 @@
     "projects": "Projeler",
     "services": "Hizmetler",
     "about": "Hakkımızda",
-    "process": "Sürecimiz",
-    "news": "Haberler",
+    "whyUs": "Neden Biz",
+    "faq": "SSS",
     "contact": "İletişim",
     "cta": "Bize Ulaşın"
   },
@@ -22,11 +22,94 @@
     "countries": "Ülke",
     "bespokeApproach": "Özel Yaklaşım"
   },
+  "About": {
+    "eyebrow": "ARQUA Hakkında",
+    "title": "Mimarlık.\nİç Tasarım.\nİnşaat.",
+    "body": "ARQUA, mimarlık, iç tasarım ve inşaat yönetimi alanlarında uzmanlaşmış uluslararası bir tasarım-yapı firmasıdır. Müşterilerimizin vizyonuna ve yaşam tarzına özel olağanüstü mekanlar sunuyoruz.",
+    "cta": "Hakkımızda Daha Fazla"
+  },
+  "Services": {
+    "eyebrow": "Hizmetlerimiz",
+    "heading": "Neler Yapıyoruz",
+    "residential": "Konut",
+    "residentialSubtitle": "Villa ve Özel Evler",
+    "commercial": "Ticari",
+    "commercialSubtitle": "Ofis ve Perakende Alanlar",
+    "hospitality": "Konaklama",
+    "hospitalitySubtitle": "Otel ve Tatil Köyleri",
+    "interior": "İç Tasarım",
+    "interiorSubtitle": "Lüks İç Mekan Çözümleri",
+    "turnkey": "Anahtar Teslim",
+    "turnkeySubtitle": "Konseptten Teslime"
+  },
+  "WhyUs": {
+    "eyebrow": "Neden Biz",
+    "heading": "Bizi Farklı Kılan Nedir",
+    "r1Title": "Uluslararası Deneyim",
+    "r1Body": "5 ülkede 10+ yıl, 250+ tamamlanmış proje.",
+    "r2Title": "Uçtan Uca Hizmet",
+    "r2Body": "Konsept, tasarım, inşaat ve anahtar teslim — tek elden.",
+    "r3Title": "Özel Yaklaşım",
+    "r3Body": "Her müşterinin vizyonuna ve yaşam tarzına özel mekanlar.",
+    "r4Title": "Premium Uygulama",
+    "r4Body": "Dünya markaları, titiz detaylar ve zamansız malzemeler."
+  },
+  "FAQ": {
+    "eyebrow": "Sıkça Sorulan Sorular",
+    "heading": "Merak Ettikleriniz",
+    "q1": "Tipik bir proje ne kadar sürer?",
+    "a1": "Konut projeleri konseptten teslime 8-14 ay, ticari projeler ise kapsama göre 6-12 ay sürer.",
+    "q2": "Azerbaycan dışında çalışıyor musunuz?",
+    "a2": "Evet, 5 ülkede faaliyet gösteriyoruz: Azerbaycan, Türkiye, Rusya, Gürcistan ve BAE.",
+    "q3": "Mimari ve iç tasarımı birlikte yapıyor musunuz?",
+    "a3": "Evet. Mimari, iç tasarım ve inşaat tek bir entegre hizmet olarak sunulur.",
+    "q4": "Maliyet nasıl hesaplanır?",
+    "a4": "Konsültasyon sonrası kapsam, malzemeler ve süreye göre detaylı bir teklif veriyoruz.",
+    "q5": "Mevcut alanım veya planlarımla çalışabilir misiniz?",
+    "a5": "Evet. Mevcut tasarımları yenileyebilir, genişletebilir veya vizyonunuza göre uyarlayabiliriz.",
+    "q6": "Anahtar teslim hizmetiniz neleri içerir?",
+    "a6": "Tasarım, izinler, inşaat, son işler ve mobilya — taşınmaya tam hazır."
+  },
   "Common": {
     "readMore": "Devamını Oku",
     "viewProject": "Projeyi Gör",
     "viewAll": "Tümünü Gör",
     "loading": "Yükleniyor...",
     "error": "Bir sorun oluştu"
+  },
+  "Footer": {
+    "description": "Premium mimarlık, iç tasarım ve inşaat.",
+    "navigation": "Navigasyon",
+    "contact": "İletişim",
+    "rights": "Tüm hakları saklıdır"
+  },
+  "Contact": {
+    "eyebrow": "Bize Ulaşın",
+    "heading": "Projenizi konuşalım",
+    "body": "Proje talepleri, sorular veya iş birliği fırsatları için bize ulaşın. Ekibimiz 24 saat içinde yanıt verecek.",
+    "formHeading": "Bize mesaj gönderin",
+    "infoHeading": "İletişim bilgileri",
+    "form": {
+      "firstName": "Adınız",
+      "lastName": "Soyadınız",
+      "phone": "Telefon",
+      "email": "Email",
+      "message": "Mesaj",
+      "submit": "Gönder",
+      "submitting": "Gönderiliyor...",
+      "successTitle": "Mesajınız iletildi",
+      "successBody": "En kısa sürede size dönüş yapacağız.",
+      "errorRequired": "Bu alan zorunludur",
+      "errorEmail": "Geçerli bir email giriniz",
+      "errorMessageMin": "Mesaj en az 10 karakter olmalıdır"
+    },
+    "info": {
+      "phoneLabel": "Telefon",
+      "emailLabel": "Email",
+      "addressLabel": "Adres",
+      "addressValue": "Bakü, Azerbaycan",
+      "hoursLabel": "Çalışma saatleri",
+      "hoursValue": "Pzt - Cum, 09:00 - 18:00"
+    }
   }
 }

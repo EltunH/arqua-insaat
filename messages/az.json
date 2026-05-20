@@ -4,8 +4,8 @@
     "projects": "Layihələr",
     "services": "Xidmətlər",
     "about": "Haqqımızda",
-    "process": "İş prosesimiz",
-    "news": "Xəbərlər",
+    "whyUs": "Niyə biz",
+    "faq": "FAQ",
     "contact": "Əlaqə",
     "cta": "Bizimlə əlaqə"
   },
@@ -22,11 +22,94 @@
     "countries": "Ölkə",
     "bespokeApproach": "Fərdi yanaşma"
   },
+  "About": {
+    "eyebrow": "ARQUA Haqqında",
+    "title": "Memarlıq.\nİnteryer Dizayn.\nTikinti.",
+    "body": "ARQUA — memarlıq, interyer dizayn və tikinti idarəetməsi üzrə ixtisaslaşmış beynəlxalq dizayn və tikinti şirkətidir. Müştərilərimizin baxışı və həyat tərzinə uyğunlaşdırılmış müstəsna məkanlar təqdim edirik.",
+    "cta": "Bizim haqqımızda"
+  },
+  "Services": {
+    "eyebrow": "Xidmətlərimiz",
+    "heading": "Nə təklif edirik",
+    "residential": "Yaşayış",
+    "residentialSubtitle": "Villa və fərdi evlər",
+    "commercial": "Kommersiya",
+    "commercialSubtitle": "Ofis və ticarət sahələri",
+    "hospitality": "Qonaqpərvərlik",
+    "hospitalitySubtitle": "Otel və kurortlar",
+    "interior": "İnteryer Dizayn",
+    "interiorSubtitle": "Lüks interyer həlləri",
+    "turnkey": "Açar Təslimi",
+    "turnkeySubtitle": "Konsepsiyadan təhvilə qədər"
+  },
+  "WhyUs": {
+    "eyebrow": "Niyə Biz",
+    "heading": "Bizi fərqləndirən nədir",
+    "r1Title": "Beynəlxalq təcrübə",
+    "r1Body": "5 ölkədə 10+ il fəaliyyət, 250-dən çox tamamlanmış layihə.",
+    "r2Title": "Tam dövr xidmət",
+    "r2Body": "Konsepsiya, dizayn, tikinti və açar təslim — vahid komandadan.",
+    "r3Title": "Fərdi yanaşma",
+    "r3Body": "Hər müştərinin baxışına və həyat tərzinə uyğunlaşdırılmış məkanlar.",
+    "r4Title": "Premium icra",
+    "r4Body": "Dünya brendləri, dəqiq detallar və zamandan asılı olmayan materiallar."
+  },
+  "FAQ": {
+    "eyebrow": "Tez-tez verilən suallar",
+    "heading": "Sizi maraqlandıran nədir",
+    "q1": "Tipik bir layihə nə qədər çəkir?",
+    "a1": "Yaşayış layihələri konsepsiyadan təhvilə qədər 8-14 ay, kommersiya layihələri isə həcmindən asılı olaraq 6-12 ay sürür.",
+    "q2": "Azərbaycandan kənarda işləyirsiniz?",
+    "a2": "Bəli, 5 ölkədə fəaliyyət göstəririk: Azərbaycan, Türkiyə, Rusiya, Gürcüstan və BƏƏ.",
+    "q3": "Memarlıq və interyer dizaynı birlikdə görürsünüz?",
+    "a3": "Bəli. Memarlıq, interyer dizayn və tikinti vahid inteqrasiya olunmuş xidmət kimi təqdim olunur.",
+    "q4": "Qiymət necə hesablanır?",
+    "a4": "Konsultasiyadan sonra layihənin həcmi, materiallar və müddətə əsasən ətraflı təklif təqdim edirik.",
+    "q5": "Mövcud məkan və ya planlarımla işləyə bilərsiniz?",
+    "a5": "Bəli. Mövcud dizaynları yeniləyə, genişləndirə və ya baxışınıza uyğun təkmilləşdirə bilərik.",
+    "q6": "Açar təslimi xidmətə nələr daxildir?",
+    "a6": "Dizayn, icazələr, tikinti, finiş və final mebelləmə — köçməyə tam hazır vəziyyət."
+  },
   "Common": {
     "readMore": "Ətraflı oxu",
     "viewProject": "Layihəyə bax",
     "viewAll": "Hamısına bax",
     "loading": "Yüklənir...",
     "error": "Xəta baş verdi"
+  },
+  "Footer": {
+    "description": "Premium memarlıq, interyer dizayn və tikinti.",
+    "navigation": "Naviqasiya",
+    "contact": "Əlaqə",
+    "rights": "Bütün hüquqlar qorunur"
+  },
+  "Contact": {
+    "eyebrow": "Bizimlə əlaqə",
+    "heading": "Layihənizi danışaq",
+    "body": "Layihə təklifi, sual və ya əməkdaşlıq imkanları üçün bizə yazın. Komandamız 24 saat ərzində cavab verəcək.",
+    "formHeading": "Bizə mesaj göndərin",
+    "infoHeading": "Əlaqə məlumatları",
+    "form": {
+      "firstName": "Adınız",
+      "lastName": "Soyadınız",
+      "phone": "Telefon",
+      "email": "Email",
+      "message": "Mesaj",
+      "submit": "Göndər",
+      "submitting": "Göndərilir...",
+      "successTitle": "Mesajınız göndərildi",
+      "successBody": "Tezliklə sizinlə əlaqə saxlayacağıq.",
+      "errorRequired": "Bu sahə tələb olunur",
+      "errorEmail": "Düzgün email daxil edin",
+      "errorMessageMin": "Mesaj ən azı 10 simvol olmalıdır"
+    },
+    "info": {
+      "phoneLabel": "Telefon",
+      "emailLabel": "Email",
+      "addressLabel": "Ünvan",
+      "addressValue": "Bakı, Azərbaycan",
+      "hoursLabel": "İş saatları",
+      "hoursValue": "B.e - Cümə, 09:00 - 18:00"
+    }
   }
 }

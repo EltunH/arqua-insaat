@@ -4,15 +4,16 @@ import { Container } from "@/components/ui/Container";
 
 const FOOTER_NAV = [
   { key: "projects", href: "/projects" },
-  { key: "services", href: "/services" },
-  { key: "about", href: "/about" },
-  { key: "process", href: "/process" },
-  { key: "news", href: "/news" },
+  { key: "services", href: "/#services" },
+  { key: "about", href: "/#about" },
+  { key: "whyUs", href: "/#why-us" },
+  { key: "faq", href: "/#faq" },
   { key: "contact", href: "/contact" },
 ] as const;
 
 export async function Footer() {
   const t = await getTranslations("Nav");
+  const tFooter = await getTranslations("Footer");
   const year = new Date().getFullYear();
 
   return (
@@ -20,22 +21,22 @@ export async function Footer() {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 py-16">
           <div>
-            <div className="flex items-baseline gap-2">
+            <div className="flex flex-col items-start leading-none">
               <span className="font-heading text-2xl tracking-wider">
                 ARQUA
               </span>
-              <span className="text-muted text-[0.6rem] uppercase tracking-[0.3em]">
+              <span className="mt-1.5 text-muted text-[0.6rem] uppercase tracking-[0.3em]">
                 Design &amp; Build
               </span>
             </div>
             <p className="text-muted text-sm leading-relaxed mt-4 max-w-xs">
-              Premium architecture, interior design and construction.
+              {tFooter("description")}
             </p>
           </div>
 
           <nav className="flex flex-col gap-3">
             <p className="text-gold text-xs uppercase tracking-[0.25em] mb-2">
-              Navigation
+              {tFooter("navigation")}
             </p>
             {FOOTER_NAV.map((item) => (
               <Link
@@ -50,7 +51,7 @@ export async function Footer() {
 
           <div className="flex flex-col gap-3">
             <p className="text-gold text-xs uppercase tracking-[0.25em] mb-2">
-              Contact
+              {tFooter("contact")}
             </p>
             <a
               href="mailto:info@arqua.az"
@@ -72,7 +73,7 @@ export async function Footer() {
             © {year} ARQUA Design &amp; Build
           </p>
           <p className="text-subtle text-xs uppercase tracking-[0.2em]">
-            All rights reserved
+            {tFooter("rights")}
           </p>
         </div>
       </Container>
