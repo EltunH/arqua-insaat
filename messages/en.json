@@ -75,7 +75,8 @@
     "viewProject": "View Project",
     "viewAll": "View All",
     "loading": "Loading...",
-    "error": "Something went wrong"
+    "error": "Something went wrong",
+    "followUs": "Follow us"
   },
   "Footer": {
     "description": "Premium architecture, interior design and construction.",
@@ -110,6 +111,62 @@
       "addressValue": "Baku, Azerbaijan",
       "hoursLabel": "Working hours",
       "hoursValue": "Mon - Fri, 09:00 - 18:00"
+    }
+  },
+  "Projects": {
+    "eyebrow": "Portfolio",
+    "heading": "Selected Projects",
+    "intro": "A selection of residential, commercial and hospitality work delivered across five countries — each one designed, engineered and built end to end by ARQUA.",
+    "featured": "Featured",
+    "viewProject": "View project",
+    "galleryHeading": "Gallery",
+    "ctaHeading": "Have a project in mind?",
+    "ctaBody": "Tell us about your space. We design, engineer and build — from the first sketch to the final handover.",
+    "ctaButton": "Start a conversation",
+    "backToProjects": "All projects",
+    "nextProject": "Next project",
+    "meta": {
+      "location": "Location",
+      "year": "Year",
+      "area": "Area"
+    },
+    "items": {
+      "caspian-shore-residence": {
+        "title": "Caspian Shore Residence",
+        "location": "Baku, Azerbaijan",
+        "summary": "A private villa on the Absheron coast where raw stone, glass and sea light meet.",
+        "body": "Set along the Caspian shoreline, this residence was conceived as a quiet horizontal gesture — long stone walls that frame the water and dissolve the line between interior and terrace.\n\nARQUA led the project end to end, from architectural concept and structural engineering to bespoke interiors and landscape. Locally quarried stone and full-height glazing keep the palette restrained, letting the changing sea light do the work."
+      },
+      "port-baku-offices": {
+        "title": "Port Baku Offices",
+        "location": "Baku, Azerbaijan",
+        "summary": "A workplace interior built around daylight, acoustic calm and considered materials.",
+        "body": "A full-floor headquarters reimagined as a sequence of calm, daylit rooms rather than an open sea of desks. Oak, blackened steel and warm stone give the space a tactile, grounded character.\n\nThe brief called for flexibility without visual noise. Concealed services, integrated lighting and a muted material palette let the architecture recede so the work — and the people — come forward."
+      },
+      "anatolia-boutique-hotel": {
+        "title": "Anatolia Boutique Hotel",
+        "location": "Istanbul, Türkiye",
+        "summary": "Twenty-eight rooms where Anatolian craft meets a contemporary hospitality language.",
+        "body": "A boutique hotel in the heart of Istanbul, designed to feel less like a hotel and more like a private house with rooms. Hand-finished plaster, brass and deep timber tones carry warmth through every floor.\n\nARQUA delivered architecture, interiors and turnkey construction as a single scope, coordinating local craftspeople to keep the detailing honest and regional while meeting international hospitality standards."
+      },
+      "highland-penthouse": {
+        "title": "Highland Penthouse",
+        "location": "Tbilisi, Georgia",
+        "summary": "A penthouse interior framed around long city views and a single sculptural stair.",
+        "body": "Perched above Tbilisi, this penthouse was stripped back to its structure and rebuilt around the view. A sculptural stair anchors the main volume, connecting the living levels in one continuous gesture.\n\nThe interior leans on a tight, refined palette — pale stone, smoked oak and bronze — so nothing competes with the horizon. Every fitting was drawn and made to measure."
+      },
+      "marina-bay-villa": {
+        "title": "Marina Bay Villa",
+        "location": "Dubai, UAE",
+        "summary": "A turnkey waterfront villa delivered design-complete, down to the last fitting.",
+        "body": "A waterfront villa delivered fully turnkey — architecture, interiors, landscape and furnishing handed over ready to live in. Generous shaded terraces and deep overhangs answer the climate while keeping the lines crisp.\n\nARQUA managed the entire delivery as one accountable team, compressing the timeline without loosening the detail. The client received a finished home, not a punch list."
+      },
+      "old-city-heritage-house": {
+        "title": "Old City Heritage House",
+        "location": "Icherisheher, Baku",
+        "summary": "A sensitive restoration of a historic Old City house, brought quietly into the present.",
+        "body": "Within Baku's walled Old City, this protected house was carefully restored and adapted for contemporary living without erasing its history. Original stonework was conserved; new interventions are clearly of their own time.\n\nWorking within heritage constraints, ARQUA threaded modern services and comfort through the existing fabric — a dialogue between old and new rather than a replacement of one by the other."
+      }
     }
   }
 }

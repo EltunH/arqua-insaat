@@ -1,9 +1,15 @@
-import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { Heading } from "@/components/ui/Heading";
 import { Button } from "@/components/ui/Button";
+import { HeroSlider } from "./HeroSlider";
 import { heroMock } from "@/lib/mock/homepage";
+
+const HERO_SLIDES = [
+  "/images/slide_up/slide1.jpg",
+  "/images/slide_up/slide2.jpg",
+  "/images/slide_up/slide3.jpg",
+];
 
 export async function Hero() {
   const t = await getTranslations("Hero");
@@ -17,91 +23,50 @@ export async function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[100svh] items-center overflow-hidden"
+      className="relative flex min-h-[80svh] items-center overflow-hidden md:min-h-[100svh]"
     >
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/images/slide_up/slide1.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/45" />
-        <div className="absolute inset-0 bg-linear-to-r from-black/55 via-black/20 to-transparent" />
-      </div>
-
-      <Container className="relative z-10 py-28 md:py-32">
-        <div className="max-w-5xl space-y-8">
-          <p className="text-gold text-xs sm:text-sm uppercase tracking-[0.3em]">
-            {t("tagline")}
-          </p>
-          <Heading as="h1" size="display">
-            {t("title")}
-          </Heading>
-          <p className="max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
-            {t("subtitle")}
-          </p>
-          <div className="flex flex-wrap items-center gap-4 pt-2">
-            <Button
-              href={ctaHref}
-              variant="primary"
-              className="bg-transparent border border-gold-light gap-4 px-6 py-3.5 sm:gap-6 sm:px-9 sm:py-4"
-            >
-              <span className="text-[#d2d2d2]">{t("exploreProjects")}</span>
-              <svg
-                aria-hidden
-                width="18"
-                height="18"
-                viewBox="0 0 22 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="shrink-0 text-white"
+      <HeroSlider images={HERO_SLIDES}>
+        <Container className="pointer-events-none relative z-10 py-20 md:py-32">
+          <div className="max-w-5xl space-y-8">
+            <p className="text-gold text-xs sm:text-sm uppercase tracking-[0.3em]">
+              {t("tagline")}
+            </p>
+            <Heading as="h1" size="display">
+              {t("title")}
+            </Heading>
+            <p className="max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
+              {t("subtitle")}
+            </p>
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <Button
+                href={ctaHref}
+                variant="primary"
+                disabled
+                className="pointer-events-auto bg-transparent border border-gold-light gap-4 px-6 py-3.5 sm:gap-6 sm:px-9 sm:py-4"
               >
-                <path
-                  d="M4 11h14M12 5l6 6-6 6"
-                  stroke="currentColor"
-                  strokeWidth="1.3"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Button>
+                <span className="text-[#d2d2d2]">{t("exploreProjects")}</span>
+                <svg
+                  aria-hidden
+                  width="18"
+                  height="18"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="shrink-0 text-white"
+                >
+                  <path
+                    d="M4 11h14M12 5l6 6-6 6"
+                    stroke="currentColor"
+                    strokeWidth="1.3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Button>
+            </div>
           </div>
-        </div>
-      </Container>
-
-      <div
-        aria-hidden
-        className="absolute right-8 bottom-10 z-10 hidden items-center gap-3 lg:flex"
-      >
-        <SliderArrow direction="prev" />
-        <SliderArrow direction="next" />
-      </div>
+        </Container>
+      </HeroSlider>
     </section>
-  );
-}
-
-function SliderArrow({ direction }: { direction: "prev" | "next" }) {
-  return (
-    <span className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border-strong/40 text-foreground/60">
-      <svg
-        width="14"
-        height="14"
-        viewBox="0 0 14 14"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className={direction === "prev" ? "rotate-180" : ""}
-      >
-        <path
-          d="M3 7h8M7 3l4 4-4 4"
-          stroke="currentColor"
-          strokeWidth="1.2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    </span>
   );
 }

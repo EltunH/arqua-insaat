@@ -1,15 +1,20 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
+import { SocialLinks } from "./SocialLinks";
 
-const FOOTER_NAV = [
-  { key: "projects", href: "/projects" },
+type FooterNavItem = { key: string; href: string; disabled?: boolean };
+
+// `disabled` renders an inert span (same look, no navigation) while
+// /projects and /contact are hidden from the demo. Remove to restore.
+const FOOTER_NAV: FooterNavItem[] = [
+  { key: "projects", href: "/projects", disabled: true },
   { key: "services", href: "/#services" },
   { key: "about", href: "/#about" },
   { key: "whyUs", href: "/#why-us" },
   { key: "faq", href: "/#faq" },
-  { key: "contact", href: "/contact" },
-] as const;
+  { key: "contact", href: "/contact", disabled: true },
+];
 
 export async function Footer() {
   const t = await getTranslations("Nav");
@@ -35,24 +40,39 @@ export async function Footer() {
           </div>
 
           <nav className="flex flex-col gap-3">
-            <p className="text-gold text-xs uppercase tracking-[0.25em] mb-2">
-              {tFooter("navigation")}
-            </p>
-            {FOOTER_NAV.map((item) => (
-              <Link
-                key={item.key}
-                href={item.href}
-                className="text-foreground text-sm hover:text-gold transition-colors"
-              >
-                {t(item.key)}
-              </Link>
-            ))}
+            <div className="mb-2">
+              <p className="text-gold text-xs uppercase tracking-[0.25em]">
+                {tFooter("navigation")}
+              </p>
+              <span aria-hidden className="mt-3 block h-px w-16 bg-gold" />
+            </div>
+            {FOOTER_NAV.map((item) =>
+              item.disabled ? (
+                <span
+                  key={item.key}
+                  className="text-foreground text-sm transition-colors hover:text-gold"
+                >
+                  {t(item.key)}
+                </span>
+              ) : (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className="text-foreground text-sm hover:text-gold transition-colors"
+                >
+                  {t(item.key)}
+                </Link>
+              ),
+            )}
           </nav>
 
           <div className="flex flex-col gap-3">
-            <p className="text-gold text-xs uppercase tracking-[0.25em] mb-2">
-              {tFooter("contact")}
-            </p>
+            <div className="mb-2">
+              <p className="text-gold text-xs uppercase tracking-[0.25em]">
+                {tFooter("contact")}
+              </p>
+              <span aria-hidden className="mt-3 block h-px w-16 bg-gold" />
+            </div>
             <a
               href="mailto:info@arqua.az"
               className="text-foreground text-sm hover:text-gold transition-colors"
@@ -65,6 +85,7 @@ export async function Footer() {
             >
               +994 12 345 67 89
             </a>
+            <SocialLinks className="mt-5" />
           </div>
         </div>
 

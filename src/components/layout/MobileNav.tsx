@@ -6,7 +6,7 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
 import { useActiveSection } from "@/lib/hooks/useActiveSection";
 
-type NavItem = { key: string; href: string; label: string };
+type NavItem = { key: string; href: string; label: string; disabled?: boolean };
 
 type Props = {
   items: readonly NavItem[];
@@ -93,6 +93,16 @@ export function MobileNav({ items, ctaHref, ctaLabel }: Props) {
 
         <nav className="flex flex-1 flex-col items-center justify-center gap-7 px-6">
           {items.map((item) => {
+            if (item.disabled) {
+              return (
+                <span
+                  key={item.key}
+                  className="font-heading text-3xl uppercase tracking-[0.12em] text-foreground transition-colors hover:text-gold"
+                >
+                  {item.label}
+                </span>
+              );
+            }
             const isAnchor = item.href.includes("#");
             const sectionId = isAnchor ? item.href.split("#")[1] : null;
             let isActive = false;
@@ -120,13 +130,15 @@ export function MobileNav({ items, ctaHref, ctaLabel }: Props) {
         </nav>
 
         <div className="border-t border-border px-(--container-px) py-6">
-          <Link
+          <a
             href={ctaHref}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="inline-flex w-full items-center justify-center bg-gold px-7 py-4 text-sm font-medium uppercase tracking-[0.15em] text-background transition-colors hover:bg-gold-light"
           >
             {ctaLabel}
-          </Link>
+          </a>
         </div>
       </div>
     </div>

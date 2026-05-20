@@ -9,6 +9,13 @@ type Props = {
   className?: string;
   href?: string;
   type?: "button" | "submit" | "reset";
+  /**
+   * Temporarily render as an inert span (same look, no navigation) for
+   * pages hidden from the demo. Remove at the call site to restore the link.
+   */
+  disabled?: boolean;
+  /** Render `href` as a plain external anchor that opens in a new tab. */
+  external?: boolean;
 };
 
 const variants: Record<ButtonVariant, string> = {
@@ -29,8 +36,27 @@ export function Button({
   className,
   href,
   type = "button",
+  disabled = false,
+  external = false,
 }: Props) {
   const classes = cn(base, variants[variant], className);
+
+  if (disabled) {
+    return <span className={classes}>{children}</span>;
+  }
+
+  if (href && external) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes}
+      >
+        {children}
+      </a>
+    );
+  }
 
   if (href) {
     return (

@@ -75,7 +75,8 @@
     "viewProject": "Projeyi Gör",
     "viewAll": "Tümünü Gör",
     "loading": "Yükleniyor...",
-    "error": "Bir sorun oluştu"
+    "error": "Bir sorun oluştu",
+    "followUs": "Bizi takip edin"
   },
   "Footer": {
     "description": "Premium mimarlık, iç tasarım ve inşaat.",
@@ -110,6 +111,62 @@
       "addressValue": "Bakü, Azerbaycan",
       "hoursLabel": "Çalışma saatleri",
       "hoursValue": "Pzt - Cum, 09:00 - 18:00"
+    }
+  },
+  "Projects": {
+    "eyebrow": "Portföy",
+    "heading": "Seçili Projeler",
+    "intro": "Beş ülkede hayata geçirilen konut, ticari ve konaklama projelerinden bir seçki — her biri ARQUA tarafından konseptten teslime tasarlandı, mühendisliği yapıldı ve inşa edildi.",
+    "featured": "Öne Çıkan",
+    "viewProject": "Projeyi gör",
+    "galleryHeading": "Galeri",
+    "ctaHeading": "Aklınızda bir proje mi var?",
+    "ctaBody": "Mekanınızı bize anlatın. İlk eskizden son teslime kadar tasarlıyor, mühendisliğini yapıyor ve inşa ediyoruz.",
+    "ctaButton": "Bir sohbet başlatın",
+    "backToProjects": "Tüm projeler",
+    "nextProject": "Sonraki proje",
+    "meta": {
+      "location": "Konum",
+      "year": "Yıl",
+      "area": "Alan"
+    },
+    "items": {
+      "caspian-shore-residence": {
+        "title": "Hazar Kıyısı Rezidansı",
+        "location": "Bakü, Azerbaycan",
+        "summary": "Abşeron kıyısında ham taş, cam ve deniz ışığının buluştuğu özel bir villa.",
+        "body": "Hazar kıyısı boyunca konumlanan bu rezidans, sakin ve yatay bir jest olarak tasarlandı — suyu çerçeveleyen ve iç mekan ile teras arasındaki çizgiyi eriten uzun taş duvarlar.\n\nARQUA projeyi baştan sona yürüttü: mimari konsept ve yapısal mühendislikten özel iç mekanlara ve peyzaja kadar. Yerel taş ve tam boy cam, paleti sade tutarak başrolü değişen deniz ışığına bırakıyor."
+      },
+      "port-baku-offices": {
+        "title": "Port Baku Ofisleri",
+        "location": "Bakü, Azerbaycan",
+        "summary": "Gün ışığı, akustik dinginlik ve özenli malzemeler etrafında kurulmuş bir ofis iç mekanı.",
+        "body": "Tüm katı kaplayan genel merkez, açık bir masa denizi yerine sakin, gün ışığıyla dolu odalar dizisi olarak yeniden tasarlandı. Meşe, karartılmış çelik ve sıcak taş mekana dokunsal, sağlam bir karakter veriyor.\n\nBrief, görsel gürültü olmadan esneklik istiyordu. Gizlenmiş tesisat, entegre aydınlatma ve sade malzeme paleti mimariyi geri çekiyor; böylece iş — ve insanlar — öne çıkıyor."
+      },
+      "anatolia-boutique-hotel": {
+        "title": "Anadolu Butik Otel",
+        "location": "İstanbul, Türkiye",
+        "summary": "Anadolu zanaatının çağdaş bir konaklama diliyle buluştuğu yirmi sekiz oda.",
+        "body": "İstanbul'un kalbinde yer alan bu butik otel, bir otelden çok, odaları olan özel bir ev gibi hissettirmek üzere tasarlandı. El işçiliğiyle bitirilmiş sıva, pirinç ve derin ahşap tonları her kata sıcaklık taşıyor.\n\nARQUA mimari, iç mekan ve anahtar teslim inşaatı tek bir kapsam olarak teslim etti; detayların samimi ve yerel kalması için yerel zanaatkârları koordine ederek uluslararası konaklama standartlarını karşıladı."
+      },
+      "highland-penthouse": {
+        "title": "Highland Çatı Katı",
+        "location": "Tiflis, Gürcistan",
+        "summary": "Şehrin geniş manzarası ve tek bir heykelsi merdiven etrafında kurgulanmış bir çatı katı iç mekanı.",
+        "body": "Tiflis'in üzerinde yükselen bu çatı katı, strüktürüne kadar soyularak manzara etrafında yeniden inşa edildi. Heykelsi bir merdiven ana hacmi sabitliyor, yaşam katlarını tek ve kesintisiz bir jestle birleştiriyor.\n\nİç mekan sıkı, rafine bir palete yaslanıyor — açık taş, isli meşe ve bronz — hiçbir şey ufukla yarışmasın diye. Her donatı ölçüye göre çizildi ve üretildi."
+      },
+      "marina-bay-villa": {
+        "title": "Marina Bay Villası",
+        "location": "Dubai, BAE",
+        "summary": "Son donatısına kadar tamamlanmış olarak teslim edilen anahtar teslim bir sahil villası.",
+        "body": "Tamamen anahtar teslim sunulan bir sahil villası — mimari, iç mekan, peyzaj ve mobilya yaşamaya hazır şekilde teslim edildi. Geniş gölgeli teraslar ve derin saçaklar, çizgileri net tutarken iklime yanıt veriyor.\n\nARQUA tüm teslimatı tek ve sorumlu bir ekip olarak yürüttü; detaydan ödün vermeden süreyi kısalttı. Müşteri, eksikler listesi değil, bitmiş bir ev aldı."
+      },
+      "old-city-heritage-house": {
+        "title": "Eski Şehir Tarihi Evi",
+        "location": "İçerişehir, Bakü",
+        "summary": "Eski Şehir'deki tarihi bir evin hassas restorasyonu — sessizce bugüne taşındı.",
+        "body": "Bakü'nün surlarla çevrili Eski Şehri'nde yer alan bu korunan ev, tarihini silmeden özenle restore edildi ve çağdaş yaşam için uyarlandı. Özgün taş işçiliği korundu; yeni müdahaleler açıkça kendi dönemine ait.\n\nKoruma kısıtları içinde çalışan ARQUA, modern tesisat ve konforu mevcut dokunun içinden geçirdi — birinin diğerinin yerini almasından çok, eski ile yeni arasında bir diyalog."
+      }
     }
   }
 }

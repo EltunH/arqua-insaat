@@ -75,7 +75,8 @@
     "viewProject": "Layihəyə bax",
     "viewAll": "Hamısına bax",
     "loading": "Yüklənir...",
-    "error": "Xəta baş verdi"
+    "error": "Xəta baş verdi",
+    "followUs": "Bizi izləyin"
   },
   "Footer": {
     "description": "Premium memarlıq, interyer dizayn və tikinti.",
@@ -110,6 +111,62 @@
       "addressValue": "Bakı, Azərbaycan",
       "hoursLabel": "İş saatları",
       "hoursValue": "B.e - Cümə, 09:00 - 18:00"
+    }
+  },
+  "Projects": {
+    "eyebrow": "Portfolio",
+    "heading": "Seçilmiş Layihələr",
+    "intro": "Beş ölkədə həyata keçirilmiş yaşayış, kommersiya və qonaqpərvərlik layihələrindən seçmələr — hər biri ARQUA tərəfindən konsepsiyadan təhvilə qədər layihələndirilib və tikilib.",
+    "featured": "Seçilmiş",
+    "viewProject": "Layihəyə bax",
+    "galleryHeading": "Qalereya",
+    "ctaHeading": "Bir layihəniz var?",
+    "ctaBody": "Məkanınız haqqında bizə danışın. İlk eskizdən son təhvilə qədər layihələndirir, mühəndislik həllini veririk və tikirik.",
+    "ctaButton": "Söhbətə başlayaq",
+    "backToProjects": "Bütün layihələr",
+    "nextProject": "Növbəti layihə",
+    "meta": {
+      "location": "Yer",
+      "year": "İl",
+      "area": "Sahə"
+    },
+    "items": {
+      "caspian-shore-residence": {
+        "title": "Xəzər Sahili Rezidensiyası",
+        "location": "Bakı, Azərbaycan",
+        "summary": "Abşeron sahilində xam daş, şüşə və dəniz işığının birləşdiyi fərdi villa.",
+        "body": "Xəzərin sahili boyunca yerləşən bu rezidensiya sakit, üfüqi bir jest kimi düşünülüb — suyu çərçivəyə alan və interyer ilə terras arasındakı sərhədi yox edən uzun daş divarlar.\n\nARQUA layihəni konsepsiyadan təhvilə qədər tam idarə etdi: memarlıq konsepsiyası və konstruksiya mühəndisliyindən fərdi interyer və landşafta qədər. Yerli daş və tam hündürlükdə şüşələmə palitranı təmkinli saxlayır, dəyişən dəniz işığına əsas rolu verir."
+      },
+      "port-baku-offices": {
+        "title": "Port Baku Ofisləri",
+        "location": "Bakı, Azərbaycan",
+        "summary": "Gün işığı, akustik rahatlıq və düşünülmüş materiallar üzərində qurulmuş ofis interyeri.",
+        "body": "Tam mərtəbəli baş ofis açıq masa dənizi yerinə sakit, gün işığı ilə dolu otaqlar ardıcıllığı kimi yenidən düşünülüb. Palıd, qaraldılmış polad və isti daş məkana toxunulası, möhkəm xarakter verir.\n\nTapşırıq vizual küy olmadan çeviklik tələb edirdi. Gizlədilmiş kommunikasiyalar, inteqrasiya olunmuş işıqlandırma və təmkinli material palitrası memarlığı geri çəkir ki, iş — və insanlar — önə çıxsın."
+      },
+      "anatolia-boutique-hotel": {
+        "title": "Anadolu Butik Otel",
+        "location": "İstanbul, Türkiyə",
+        "summary": "Anadolu sənətkarlığının müasir qonaqpərvərlik dili ilə birləşdiyi iyirmi səkkiz otaq.",
+        "body": "İstanbulun mərkəzində yerləşən bu butik otel oteldən çox, otaqları olan şəxsi ev hissi verəcək şəkildə layihələndirilib. Əllə işlənmiş suvaq, mis və dərin taxta tonları hər mərtəbəyə istilik gətirir.\n\nARQUA memarlıq, interyer və açar-təslim tikintini vahid iş kimi təhvil verdi, detalların səmimi və regional qalması üçün yerli sənətkarları əlaqələndirərək beynəlxalq qonaqpərvərlik standartlarına cavab verdi."
+      },
+      "highland-penthouse": {
+        "title": "Highland Penthaus",
+        "location": "Tbilisi, Gürcüstan",
+        "summary": "Şəhərin geniş mənzərəsi və tək heykəltəraşlıq pilləkəni ətrafında qurulmuş penthaus interyeri.",
+        "body": "Tbilisinin üzərində yerləşən bu penthaus konstruksiyasına qədər soyulub və mənzərə ətrafında yenidən qurulub. Heykəltəraşlıq pilləkəni əsas həcmi sabitləyir, yaşayış səviyyələrini bir kəsilməz jestlə birləşdirir.\n\nİnteryer sıx, zərif palitraya əsaslanır — açıq daş, hisli palıd və bürünc — heç nə üfüqlə rəqabət aparmasın deyə. Hər detal ölçüyə uyğun çəkilib və hazırlanıb."
+      },
+      "marina-bay-villa": {
+        "title": "Marina Bay Villası",
+        "location": "Dubai, BƏƏ",
+        "summary": "Son detalına qədər tam hazır təhvil verilən açar-təslim sahil villası.",
+        "body": "Tam açar-təslim təhvil verilən sahil villası — memarlıq, interyer, landşaft və mebel yaşamağa hazır vəziyyətdə təhvil verildi. Geniş kölgəli terraslar və dərin çıxıntılar xətləri təmiz saxlayaraq iqlimə cavab verir.\n\nARQUA bütün təhvili vahid məsul komanda kimi idarə etdi, detalı boşaltmadan müddəti qısaltdı. Müştəri tamamlanmamış işlər siyahısını deyil, bitmiş bir ev aldı."
+      },
+      "old-city-heritage-house": {
+        "title": "İçərişəhər Tarixi Evi",
+        "location": "İçərişəhər, Bakı",
+        "summary": "İçərişəhərdəki tarixi evin həssas bərpası — sakitcə bu günə gətirildi.",
+        "body": "Bakının qala divarları içindəki İçərişəhərdə yerləşən bu qorunan ev tarixini silmədən diqqətlə bərpa edilib və müasir həyat üçün uyğunlaşdırılıb. Orijinal daş işi qorunub; yeni müdaxilələr açıq şəkildə öz dövrünə aiddir.\n\nİrs məhdudiyyətləri çərçivəsində işləyən ARQUA müasir kommunikasiya və rahatlığı mövcud quruluşa hörüb — birinin digərini əvəz etməsi yox, köhnə ilə yeni arasında dialoq."
+      }
     }
   }
 }

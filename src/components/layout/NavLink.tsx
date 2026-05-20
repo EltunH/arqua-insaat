@@ -7,11 +7,21 @@ import { useActiveSection } from "@/lib/hooks/useActiveSection";
 type Props = {
   href: string;
   children: React.ReactNode;
+  /** Render as an inert span (same look, no navigation) — see Button. */
+  disabled?: boolean;
 };
 
-export function NavLink({ href, children }: Props) {
+export function NavLink({ href, children, disabled = false }: Props) {
   const pathname = usePathname();
   const activeSection = useActiveSection(pathname);
+
+  if (disabled) {
+    return (
+      <span className="relative text-xs uppercase tracking-[0.2em] text-foreground transition-colors hover:text-gold">
+        {children}
+      </span>
+    );
+  }
 
   const isAnchor = href.includes("#");
   const sectionId = isAnchor ? href.split("#")[1] : null;

@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { Heading } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 import { ContactForm } from "@/components/sections/ContactForm";
+import { SocialLinks } from "@/components/layout/SocialLinks";
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -43,6 +44,7 @@ export default async function ContactPage({ params }: Props) {
               <InfoBlock label={t("info.addressLabel")} value={t("info.addressValue")} />
               <InfoBlock label={t("info.hoursLabel")} value={t("info.hoursValue")} />
             </ul>
+            <SocialLinks className="mt-12" />
           </aside>
 
           <div className="md:col-span-8">

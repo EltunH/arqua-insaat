@@ -20,14 +20,14 @@ export async function Stats() {
             return (
               <li
                 key={stat.label}
-                className="flex items-center justify-start gap-3 px-0 py-10 sm:gap-4 sm:px-4 md:justify-center md:gap-5 md:px-6 md:py-16 md:[&:not(:last-child)]:border-r md:[&:not(:last-child)]:border-white/8"
+                className="flex min-w-0 items-center justify-start gap-3 px-0 py-10 sm:gap-4 sm:px-4 md:justify-center md:gap-5 md:px-6 md:py-16 md:[&:not(:last-child)]:border-r md:[&:not(:last-child)]:border-white/8"
               >
                 <Icon />
-                <div className="flex flex-col">
+                <div className="flex min-w-0 flex-col">
                   <span className="font-heading text-4xl leading-none text-gold md:text-5xl">
                     {stat.value}
                   </span>
-                  <span className="mt-2 text-[0.7rem] uppercase tracking-[0.22em] text-foreground/85 md:text-xs">
+                  <span className="mt-2 hyphens-auto wrap-break-word text-[0.7rem] uppercase tracking-[0.22em] text-foreground/85 md:text-xs">
                     {t(stat.label as "yearsOfExperience" | "completedProjects" | "countries" | "bespokeApproach")}
                   </span>
                 </div>
