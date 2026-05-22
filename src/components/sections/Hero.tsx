@@ -41,7 +41,6 @@ export async function Hero() {
               <Button
                 href={ctaHref}
                 variant="primary"
-                disabled
                 className="pointer-events-auto bg-transparent border border-gold-light gap-4 px-6 py-3.5 sm:gap-6 sm:px-9 sm:py-4"
               >
                 <span className="text-[#d2d2d2]">{t("exploreProjects")}</span>

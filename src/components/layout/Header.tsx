@@ -7,20 +7,15 @@ import { LocaleSwitcher } from "./LocaleSwitcher";
 import { NavLink } from "./NavLink";
 import { MobileNav } from "./MobileNav";
 
-type NavItem = { key: string; href: string; disabled?: boolean };
-
-// `disabled` renders the item as an inert span (same look, no navigation)
-// while /projects and /contact are hidden from the demo. Remove the flags
-// to restore the links.
-const NAV_ITEMS: NavItem[] = [
+const NAV_ITEMS = [
   { key: "home", href: "/" },
-  { key: "projects", href: "/projects", disabled: true },
+  { key: "projects", href: "/projects" },
   { key: "services", href: "/#services" },
   { key: "about", href: "/#about" },
   { key: "whyUs", href: "/#why-us" },
   { key: "faq", href: "/#faq" },
-  { key: "contact", href: "/contact", disabled: true },
-];
+  { key: "contact", href: "/contact" },
+] as const;
 
 export async function Header() {
   const t = await getTranslations("Nav");
@@ -29,7 +24,6 @@ export async function Header() {
     key: item.key,
     href: item.href,
     label: t(item.key),
-    disabled: item.disabled ?? false,
   }));
 
   return (
@@ -47,7 +41,7 @@ export async function Header() {
 
           <nav className="hidden items-center gap-8 lg:flex">
             {NAV_ITEMS.map((item) => (
-              <NavLink key={item.key} href={item.href} disabled={item.disabled}>
+              <NavLink key={item.key} href={item.href}>
                 {t(item.key)}
               </NavLink>
             ))}

@@ -6,7 +6,7 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils/cn";
 import { useActiveSection } from "@/lib/hooks/useActiveSection";
 
-type NavItem = { key: string; href: string; label: string; disabled?: boolean };
+type NavItem = { key: string; href: string; label: string };
 
 type Props = {
   items: readonly NavItem[];
@@ -93,16 +93,6 @@ export function MobileNav({ items, ctaHref, ctaLabel }: Props) {
 
         <nav className="flex flex-1 flex-col items-center justify-center gap-7 px-6">
           {items.map((item) => {
-            if (item.disabled) {
-              return (
-                <span
-                  key={item.key}
-                  className="font-heading text-3xl uppercase tracking-[0.12em] text-foreground transition-colors hover:text-gold"
-                >
-                  {item.label}
-                </span>
-              );
-            }
             const isAnchor = item.href.includes("#");
             const sectionId = isAnchor ? item.href.split("#")[1] : null;
             let isActive = false;

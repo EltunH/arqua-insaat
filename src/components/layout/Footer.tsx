@@ -3,18 +3,14 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { SocialLinks } from "./SocialLinks";
 
-type FooterNavItem = { key: string; href: string; disabled?: boolean };
-
-// `disabled` renders an inert span (same look, no navigation) while
-// /projects and /contact are hidden from the demo. Remove to restore.
-const FOOTER_NAV: FooterNavItem[] = [
-  { key: "projects", href: "/projects", disabled: true },
+const FOOTER_NAV = [
+  { key: "projects", href: "/projects" },
   { key: "services", href: "/#services" },
   { key: "about", href: "/#about" },
   { key: "whyUs", href: "/#why-us" },
   { key: "faq", href: "/#faq" },
-  { key: "contact", href: "/contact", disabled: true },
-];
+  { key: "contact", href: "/contact" },
+] as const;
 
 export async function Footer() {
   const t = await getTranslations("Nav");
@@ -46,24 +42,15 @@ export async function Footer() {
               </p>
               <span aria-hidden className="mt-3 block h-px w-16 bg-gold" />
             </div>
-            {FOOTER_NAV.map((item) =>
-              item.disabled ? (
-                <span
-                  key={item.key}
-                  className="text-foreground text-sm transition-colors hover:text-gold"
-                >
-                  {t(item.key)}
-                </span>
-              ) : (
-                <Link
-                  key={item.key}
-                  href={item.href}
-                  className="text-foreground text-sm hover:text-gold transition-colors"
-                >
-                  {t(item.key)}
-                </Link>
-              ),
-            )}
+            {FOOTER_NAV.map((item) => (
+              <Link
+                key={item.key}
+                href={item.href}
+                className="text-foreground text-sm hover:text-gold transition-colors"
+              >
+                {t(item.key)}
+              </Link>
+            ))}
           </nav>
 
           <div className="flex flex-col gap-3">
